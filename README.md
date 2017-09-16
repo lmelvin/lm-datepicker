@@ -7,12 +7,12 @@ This is a simple AngularJS 1.x directive for [xdan/datetimepicker](https://githu
 
 ## Usage
 
-**Module**
+##### Module
 ```javascript
 angular.module('app', ['lm-datepicker']);
 ```
 
-**Directive**
+##### Directive
 The `datepicker` directive can only be used as an attribute
 
 ```html 
@@ -24,8 +24,7 @@ The `datepicker` directive can only be used as an attribute
 </ANY>
 ```
 
-**Attributes**
-
+##### Attributes
 | Param            | Type       | Details  |
 | -------------    |------------| -----    |
 | options          | object     | This is an options object for jquery.datetimepicker. Please see [https://github.com/xdan/datetimepicker](https://github.com/xdan/datetimepicker) for full list of options. |
