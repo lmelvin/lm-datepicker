@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../bower_components/datetimepicker/build/jquery.datetimepicker.min.css" />
+</head>
+<body ng-app="app" ng-controller="ctrl as vm">
+    <br />
+    <div>
+        <label for="dp1">Just Date</label>
+        <input id="dp1" type="text" ng-model="vm.date" datepicker options="vm.options">
+    </div>
+    <br />
+    <div>
+        <label for="dp2">Date & time</label>
+        <input id="dp2" type="text" ng-model="vm.datetime" datepicker options="vm.datetimeOptions">
+    </div>
+    <br />
+    <hr />
+    <div>
+        Model
+        <pre>{{ vm | json }}</pre>
+    </div>
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
+    <script src="../bower_components/datetimepicker/build/jquery.datetimepicker.full.js"></script>
+    <script src="../dist/lm-datepicker.js"></script>
+    <script src="demo.js"></script>
+</body>
+</html>

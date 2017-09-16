@@ -1,0 +1,27 @@
+{
+  "name": "lm-datepicker",
+  "description": "angular wrapper for jquery.datetimepicker",
+  "main": "gulpfile.js",
+  "authors": [
+    "Lucas Melvin"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    ".gitignore",
+    ".vs",
+    "bower_components",
+    "docs",
+    "demo",
+    "karma.conf.js",
+    "node_modules",
+    "README.md",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "datetimepicker": "^2.5.4",
+    "moment": "^2.18.1",
+    "angular": "1.6.5"
+  }
+}
