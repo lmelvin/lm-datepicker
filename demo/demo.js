@@ -4,7 +4,7 @@
     function ctrl() {
 
         var vm = this;
-        vm.date = "2017-09-14T17:19:09.784+00:00";
+        vm.date = "1964-04-20T00:00:00.000+00:00";
         vm.options = {
             format: "n/j/Y",
             timepicker: false

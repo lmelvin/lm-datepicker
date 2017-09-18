@@ -23,7 +23,12 @@
                 var $datepicker;
 
                 ngModel.$render = function () {
-                    scope.options.value = ngModel.$modelValue;
+                    var m = moment.utc(ngModel.$modelValue);
+                    if (m.isValid()) {
+                        scope.options.value = m.toDate();
+                    } else {
+                        scope.options.value = null;
+                    }
                     $datepicker = $(element).datetimepicker(scope.options);
                 }
 
