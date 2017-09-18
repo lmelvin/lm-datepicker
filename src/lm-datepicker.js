@@ -23,9 +23,9 @@
                 var $datepicker;
 
                 ngModel.$render = function () {
-                    var m = moment.utc(ngModel.$modelValue);
-                    if (m.isValid()) {
-                        scope.options.value = m.toDate();
+                    var val = ngModel.$modelValue;
+                    if (val) {
+                        scope.options.value = moment.utc(ngModel.$modelValue).toDate();
                     } else {
                         scope.options.value = null;
                     }
